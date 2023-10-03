@@ -1,0 +1,72 @@
+.lista {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 15px rgba(0, 60, 255, 0.303);
+}
+
+.name {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  width: 25%;
+  text-transform: capitalize;
+  color: #1d1d1d;
+}
+
+.number {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #6f6f6f;
+}
+
+.edit-button {
+  background-color: #3976e0;
+  transition: 250ms;
+  margin: 0 5px;
+
+  &:hover {
+    background-color: #0044ff;
+    padding: 10px 15px;
+  }
+}
+
+.delete-button,
+.no-button {
+  background-color: #e45656;
+  transition: 250ms;
+  margin: 0 5px;
+
+  &:hover {
+    background-color: #ca2121;
+    padding: 10px 15px;
+  }
+}
+
+.modal div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.yes-button {
+  background-color: #36924a;
+  transition: 250ms;
+  margin: 0 5px;
+
+  &:hover {
+    background-color: #0d942a;
+    padding: 10px 15px;
+  }
+}
+
+
+

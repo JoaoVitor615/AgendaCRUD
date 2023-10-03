@@ -1,0 +1,61 @@
+.container {
+  max-width: 50%;
+  margin: 20px auto;
+}
+
+form {
+  background-color: #ffffff;
+  box-shadow: 0 1px 15px rgba(0, 60, 255, 0.303);
+  padding: 4%;
+  border-radius: 15px;
+}
+
+label {
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  background-color: #e6e6e6;
+  min-width: 75%;
+
+  &::placeholder {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(169, 169, 169);
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+
+}
+input[type=number] {
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.criar-button {
+  width: 100%;
+  background-color: #3976e0;
+  transition: 250ms;
+
+  &:hover {
+    background-color: #0044ff;
+    padding: 10px 15px;
+  }
+}

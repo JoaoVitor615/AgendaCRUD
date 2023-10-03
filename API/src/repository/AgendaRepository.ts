@@ -37,6 +37,11 @@ class AgendaRepository implements IAgendaRepository {
         const contato = await this.agenda.findOne({ where: { Id: registro.Id }});
         return contato;
     }
+
+    //Carregar um contato específico
+    public async CarregarContato(Id: number): Promise<Contatos> {
+        return await this.agenda.findOne({ where: {Id: Id}});
+    }
 }
 
 export default AgendaRepository;

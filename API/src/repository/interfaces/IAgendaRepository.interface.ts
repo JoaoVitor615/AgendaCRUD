@@ -9,7 +9,7 @@ interface IAgendaRepository {
 
     EditarContato(registro: Contatos): Promise<Contatos>;
 
-    // CarregarContato(Id: number): Promise<Contatos>;
+    CarregarContato(Id: number): Promise<Contatos>;
 
 }
 

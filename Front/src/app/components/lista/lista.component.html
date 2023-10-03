@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="header">
+    <h1>Lista de Contatos</h1>
+    <button routerLink="criar-contato">Novo contato +</button>
+  </div>
+
+  <ul class="lista">
+
+    <li class="card" *ngFor="let item of listaContatos">
+      <p class="name">{{ item.Nome }}</p>
+      <p class="number">{{ item.Telefone }}</p>
+      <section>
+        <button class="edit-button" routerLink="editar-contato/{{ item.Id }}">Editar</button>
+        <button class="delete-button" (click)="toggleModalId(item.Id)">Excluir</button>
+      </section>
+    </li>
+  </ul>
+
+  <ng-container *ngIf="showModal">
+    <div class="modal">
+      <p>Deseja excluir essa tarefa?</p>
+      <div>
+        <button class="yes-button" (click)="excluir()">Sim</button>
+        <button class="no-button" (click)="toggleModal()">Cancelar</button>
+      </div>
+
+    </div>
+    <div class="overlay"></div>
+  </ng-container>
+</div>
