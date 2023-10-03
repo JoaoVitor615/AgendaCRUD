@@ -1,0 +1,10 @@
+<ng-container *ngIf="showModal">
+  <div class="modal">
+    <p>{{ texto }}</p>
+    <div>
+      <button class="yes-button" (click)="navigateHome()">Ok</button>
+    </div>
+
+  </div>
+  <div class="overlay"></div>
+</ng-container>

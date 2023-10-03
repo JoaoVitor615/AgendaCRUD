@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ListaComponent } from './components/lista/lista.component';
 import { CriarContatoComponent } from './components/criar-contato/criar-contato.component';
 import { EditarContatoComponent } from './components/editar-contato/editar-contato.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaComponent,
     CriarContatoComponent,
-    EditarContatoComponent
+    EditarContatoComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

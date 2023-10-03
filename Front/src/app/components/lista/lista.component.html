@@ -1,7 +1,7 @@
 <div class="container">
   <div class="header">
     <h1>Lista de Contatos</h1>
-    <button routerLink="criar-contato">Novo contato +</button>
+    <button class="criar-contato" routerLink="criar-contato">Novo contato +</button>
   </div>
 
   <ul class="lista">
@@ -18,7 +18,7 @@
 
   <ng-container *ngIf="showModal">
     <div class="modal">
-      <p>Deseja excluir essa tarefa?</p>
+      <p>Deseja excluir esse contato?</p>
       <div>
         <button class="yes-button" (click)="excluir()">Sim</button>
         <button class="no-button" (click)="toggleModal()">Cancelar</button>
