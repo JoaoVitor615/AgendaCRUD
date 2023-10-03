@@ -18,6 +18,10 @@
         <button class="delete-button" (click)="toggleModalId(item.Id)">Excluir</button>
       </section>
     </li>
+
+    <li class="card" *ngIf="!this.listaContatos?.length">
+      <p class="empty">Não há contatos adicionados ainda</p>
+    </li>
   </ul>
 
   <ng-container *ngIf="showModal">
