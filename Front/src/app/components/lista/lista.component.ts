@@ -11,6 +11,7 @@ export class ListaComponent {
   listaContatos: Contato[]; //Recebe a lista de contatos da API
   showModal: boolean; //True ou False para mostrar ou esconder o modal de excluir
   idDelete: number;
+  qtdContatos: number = 0;
 
   ngOnInit() {
     this.listarContatos()
@@ -22,6 +23,7 @@ export class ListaComponent {
   listarContatos(){
     axios.get('http://localhost:3000/agenda/listar-contatos').then((res) => {
       this.listaContatos = res.data;
+      this.qtdContatos = this.listaContatos?.length;
     })
   };
 
@@ -45,9 +47,6 @@ export class ListaComponent {
     this.toggleModal()
   }
 
-  //Editar contato
-  editContato(Id: number) {
 
-  }
 
 }
